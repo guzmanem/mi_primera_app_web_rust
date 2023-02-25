@@ -1,0 +1,17 @@
+[package]
+name = "mi_primera_app_web_rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = "0.4.10"
+dotenv = "0.15.0"
+
+[global]
+address = "0.0.0.0"
+
+[profile.dev]
+# use nightly for codegen
+toolchain = "nightly"
